@@ -1,0 +1,34 @@
+On this day, we will learn how Git works? and how can I use it to achieve powerful ends/goals.
+By using Git on command line, we will know, how you can use it to do:-
+version control, how to clone repositories,fork them, how to make pull requests and how to merge.
+Now, let's understand what is version control?
+For example, you have a code file and you add line of code into it.
+You call this, save point no.1
+Now, at next step, you have added more line of code into the existing codes.
+You call this, save point no.2
+Then, at next step, you might mess up the code and it is far away from being fixed.
+Therefore, we can roll back to the save point no.2 or no.1, whatever you have made and wanted to go.
+
+Now, working with the command line.
+I can navigate to any folder I want.
+To create file through CLI, you need to use "touch filename".
+In order to open the file you've created, use "code filename".
+Now, we will create a git local directory to track changes in the file, to commit changes and to perform version control.
+To initialize git, you need to type simply "git init".
+Now, in order to track changes in a file, you need to add it into an area that's called "staging area".
+Now, in order to find what's inside of a staging area, you can use "git status" command.
+After, you will get to see the files, if the files in a working directory in which git directory is initialized, 
+if that file's changes are not being tracked, then that will be shown as red.
+If file's changes are being tracked, then that will be shown as green.
+In order to add file in a staging area, you need to type "git add filename".
+Now, if the file comes in the staging area, it is ready to be committed.
+In order to commit the changes, we need to type "git commit -m msg".
+Here, msg represents the changes you've done in the file.
+You can see the commit you've made till now, through "log command".
+There would be hash that would uniquley identify the commit you've made.
+Each commit will have different identity.
+Now, if I have multiple files in the working directory then, it will be difficult for me to add each and every file into
+the staging area.
+To make it easier, you need to use "git add ." 
+The "." will represents all the files that are inside the working directory and will be added into the staging area.
+NOTE:- Each commit represents a new save point.
