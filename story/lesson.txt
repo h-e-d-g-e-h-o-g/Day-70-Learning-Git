@@ -65,3 +65,6 @@ Now, your all the files on local repo, are now on GitHub repo.
 Now, if you go at the "insights" page and tap on the network button, you can see the main branch having two save points 
 or commits.
 NOTE:- The main branch is a branch of commits or save points, it tracks the sequence in which you have made commits.
+
+Test:- "git remote rm origin" is used to remove the remote name "origin".
+You can use "git remote -v" to confirm it.
