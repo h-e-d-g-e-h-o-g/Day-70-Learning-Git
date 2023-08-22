@@ -17,7 +17,7 @@ Now, we will create a git local directory to track changes in the file, to commi
 To initialize git, you need to type simply "git init".
 Now, in order to track changes in a file, you need to add it into an area that's called "staging area".
 Now, in order to find what's inside of a staging area, you can use "git status" command.
-After, you will get to see the files, if the files in a working directory in which git directory is initialized, 
+After, you will get to see the files, if the files in a working directory in which git repository is initialized, 
 if that file's changes are not being tracked, then that will be shown as red.
 If file's changes are being tracked, then that will be shown as green.
 In order to add file in a staging area, you need to type "git add filename".
@@ -32,3 +32,18 @@ the staging area.
 To make it easier, you need to use "git add ." 
 The "." will represents all the files that are inside the working directory and will be added into the staging area.
 NOTE:- Each commit represents a new save point.
+The position "head" represents the position or the state, we are currently in.
+
+Now, recaping what we've learned.
+As, we have current working directory, in which we have a file and we have initialized a local git repository.
+Git will track the changes between the working directory and git repository.
+Now, to track the changes, we need to push the file into staging area.
+So, now why there is staging area at first place, just why can't we add the file to repository directory.
+Because, we don't want to commit or to track all the file changes.
+In staging area, we only put those files that we want to commit.
+After, the file is addded into the staging area, we need to commit it and after, it will be added into local repository.
+That would be called our "version".
+We can go to version to previous version by rollback.
+We need to use "git checkout filename" command.
+
+Note:- we can use "git diff filename" to find the difference between the current version and previous saved version of the file.
