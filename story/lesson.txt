@@ -47,3 +47,21 @@ We can go to version to previous version by rollback.
 We need to use "git checkout filename" command.
 
 Note:- we can use "git diff filename" to find the difference between the current version and previous saved version of the file.
+
+Now, previously, we have talked about the local repository.
+Now, we will learn how to create remote repository that is hosted on remote location or somebody's desktop using GitHub.
+In order to create one, we need to push the local git repository inside our working directory into remote repository.
+We need to copy the url of GitHub repository.
+Now, our goal here is to push the commits that we've made in our local repo to remote repo.
+To do that, we need to create repo through command "git remote add origin url"
+Here, origin is the name of the repo, but we can name remote repo anything.
+But the most developers follow the origin naming convention to name their remote repo.
+url is the address of the github repository that is going to held the local repo's commits.
+Next, to puch local repo to remote repo, use command "git push -u origin main"
+Here, the local repo is pushed to remote repo through -u flag, it links the local repo with the remote repo.
+The command pushed the local repo to the main branch of remote repo.
+
+Now, your all the files on local repo, are now on GitHub repo.
+Now, if you go at the "insights" page and tap on the network button, you can see the main branch having two save points 
+or commits.
+NOTE:- The main branch is a branch of commits or save points, it tracks the sequence in which you have made commits.
